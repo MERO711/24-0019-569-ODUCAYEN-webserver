@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: whitesmoke;
 }
 
 h1 {
@@ -35,4 +34,27 @@ img {
 
 a {
     text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.content h2, .content a, .content img {
+    margin-top: 20px;
+}
+
+.content h3, .content p, .content ul {
+    text-align: center;
+    width: 100%;
+}
+
+.content ul, .content li {
+    list-style-position: inside;
+    list-style-type: none;
 }
