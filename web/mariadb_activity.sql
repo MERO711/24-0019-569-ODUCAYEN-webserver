@@ -23,3 +23,9 @@ CREATE TABLE courses (
     description VARCHAR(255),
     units INT
 );
+
+INSERT INTO courses (course_name, description, units)
+VALUES
+('CIT17', 'Web Information System', 3),
+('CC6', 'Emerging Technologies in IT', 3),
+('CC17', 'Mobile Application Design and Development', 3);
