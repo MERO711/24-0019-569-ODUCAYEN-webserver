@@ -16,3 +16,10 @@ VALUES
 ('Pedro Reyes', 'BSIT', 3);
 
 SELECT * FROM students;
+
+CREATE TABLE courses (
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(100),
+    description VARCHAR(255),
+    units INT
+);
