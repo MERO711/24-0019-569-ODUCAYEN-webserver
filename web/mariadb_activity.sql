@@ -11,8 +11,8 @@ CREATE TABLE students (
 
 INSERT INTO students (name, course, year_level)
 VALUES 
-('Juan Dela Cruz', 'BSIT', 1)
-('Maria Santos', 'BSCS', 2)
+('Juan Dela Cruz', 'BSIT', 1),
+('Maria Santos', 'BSCS', 2),
 ('Pedro Reyes', 'BSIT', 3);
 
 SELECT * FROM students;
@@ -41,7 +41,11 @@ Answer the following questions:
     The command used to display all tables in mySQL is SHOW TABLES.
 4. What SQL command is used to add records?
     The command used to add records in mySQL are INSERT INTO [parameters] then VALUES [values of parameters].
-5. What SQL command is used to retrieve records?Laboratory Activity: Introduction to MariaDB Using GitHub Codespaces6
+5. What SQL command is used to retrieve records?
 6. What is the purpose of the PRIMARY KEY ?
+    The purpose of the PRIMARY KEY is to help uniquely identify each row and ensures it has its own value.
 7. What is the purpose of AUTO_INCREMENT ?
-8. What is the difference between UPDATE and DELETE ?
+    The purpose of AUTO_INCREMEMENT is to increase the identified value by 1 without needing to manually input it.
+8. What is the difference between UPDATE and DELETE ? 
+    The difference between UPDATE and DELETE is UPDATE enables a value to be modified, while DELETE erases a value.
+*/
