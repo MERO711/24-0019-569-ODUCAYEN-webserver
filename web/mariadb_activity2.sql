@@ -75,17 +75,26 @@ VALUES
 
 -- CHALLENGE QUERIES
 -- TASK 1
-SELECT students.* 
-FROM students 
-JOIN enrollments 
-ON students.id = enrollments.student_id 
-WHERE enrollments.course_id = 1;
+SELECT 
+    students.name,
+    courses.course_name
+FROM enrollments 
+JOIN students 
+    ON enrollments.student_id = students.id 
+JOIN courses
+    ON enrollments.course_id = courses.course_id
+WHERE courses.course_name = 'CIT17';
 
 -- TASK 2
-SELECT courses.*
-FROM courses
-JOIN enrollments 
-ON courses.course_id = enrollments.course_id 
+SELECT 
+    students.name,.
+    courses.course_name,
+    courses.description
+FROM enrollments
+JOIN students
+    ON enrollments.student_id = students.id
+JOIN courses
+    ON enrollments.course_id = courses.course_id
 WHERE enrollments.student_id = 1;
 
 -- TASK 3 
@@ -102,8 +111,10 @@ GROUP BY course_id;
  ORDER BY total_students DESC;
 
 --  TASK 5
-SELECT * FROM students ORDER BY name ASC;
+SELECT * FROM students 
+ORDER BY name ASC;
 
 -- TASK 6
-SELECT COUNT(*) AS total_enrollments
+SELECT COUNT(*) 
+AS total_enrollments
 FROM enrollments;
